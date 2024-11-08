@@ -1,6 +1,11 @@
+# Ignorar todos os arquivos dentro da pasta 'data/'
+data/*
+
+# Ignorar arquivos com as extensões específicas
 *.csv
 *.pkl
 *.h5
 *.db
-data/
+
+# Ignorar a pasta __pycache__ que contém arquivos compilados Python
 __pycache__/
