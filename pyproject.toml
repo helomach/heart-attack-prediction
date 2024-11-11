@@ -1,9 +1,8 @@
 [tool.taskipy.tasks]
-fase1 = "python fase1.py"
-fase2 = "python fase2.py"
-fase3 = "python fase3.py"
-fase4 = "python fase4.py"
-
+fase1 = "python Fase1.py"
+fase2 = "python Fase2.py"
+fase3 = "python Fase3.py"
+fase4 = "python Fase4.py"
 
 fase1_dep = "task fase1"
 pre_fase2_dep = "task fase1_dep"
