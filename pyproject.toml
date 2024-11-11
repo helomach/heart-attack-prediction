@@ -13,6 +13,9 @@ fase3_dep = "task fase3"
 pre_fase4_dep = "task fase2_dep"
 fase4_dep = "task fase4"
 
+jupyter = "jupyter-notebook 2>/dev/null &"
+jupyter-list = "jupyter notebook list"
+
 [tool.poetry]
 name = "heart-attack-prediction"
 version = "0.1.0"
