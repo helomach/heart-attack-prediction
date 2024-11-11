@@ -6,6 +6,7 @@ data/*.csv
 *.pkl
 *.h5
 *.db
+*-checkpoint.ipynb
 
 # Ignorar a pasta __pycache__ que contém arquivos compilados Python
 __pycache__/
