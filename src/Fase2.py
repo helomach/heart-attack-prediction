@@ -44,7 +44,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # %%
-data = pd.read_csv('C:/Users/heloi/tcc/processed_data.csv')
+data = pd.read_csv('../data/Fase1-output_processed_data.csv')
 
 # %%
 data.head()
@@ -65,13 +65,15 @@ print(f'Teste: {X_test.shape}, {y_test.shape}')
 
 # %%
 # Salvar os dados divididos
-joblib.dump((X_train, X_test, y_train, y_test), 'data/data_splits.pkl')
-print("Dados divididos salvos em data_splits.pkl")
+save_to = '../data/Fase2-output_data_splits.pkl'
+joblib.dump((X_train, X_test, y_train, y_test), save_to)
+print(f"Dados divididos salvos em {save_to}")
 
 # %%
 # Salvar os dados de teste
-joblib.dump((X_test, y_test), 'data/data_test.pkl')
-print("Dados de teste salvos em data_test.pkl")
+save_to = '../data/Fase2-output_data_test.pkl'
+joblib.dump((X_test, y_test), save_to)
+print(f"Dados de teste salvos em {save_to}")
 
 # %%
 sns.countplot(x=y_train)
