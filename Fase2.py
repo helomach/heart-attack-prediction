@@ -69,7 +69,7 @@ joblib.dump((X_train, X_test, y_train, y_test), 'data/data_splits.pkl')
 print("Dados divididos salvos em data_splits.pkl")
 
 # %%
-# Salvar os dados de teste no Google Drive
+# Salvar os dados de teste
 joblib.dump((X_test, y_test), 'data/data_test.pkl')
 print("Dados de teste salvos em data_test.pkl")
 
