@@ -6,7 +6,7 @@
 *.pkl
 *.h5
 *.db
-*-checkpoint.ipynb
+.ipynb_checkpoints
 
 # Ignorar a pasta __pycache__ que contém arquivos compilados Python
 __pycache__/
