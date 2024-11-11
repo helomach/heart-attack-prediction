@@ -39,7 +39,7 @@ import joblib
 
 # %%
 # Carregar os dados de treino e teste
-X_train, X_test, y_train, y_test = joblib.load('data/data_splits.pkl')
+X_train, X_test, y_train, y_test = joblib.load('../data/Fase2-output_data_splits.pkl')
 
 # Aplicar SMOTE
 smote = SMOTE(random_state=42)
@@ -50,4 +50,4 @@ print("Proporções após SMOTE:")
 print(y_resampled.value_counts(normalize=True))
 
 # Salvar os dados reamostrados
-joblib.dump((X_resampled, y_resampled), 'data/data_resampled.pkl')
+joblib.dump((X_resampled, y_resampled), '../data/Fase3-output_data_resampled.pkl')
