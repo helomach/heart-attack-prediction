@@ -35,7 +35,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # %%
-data = pd.read_csv('C:/Users/heloi/tcc/heart_2022_with_nans.csv')
+data = pd.read_csv('../data/heart_2022_with_nans.csv')
 
 # %%
 data.head()
@@ -161,6 +161,6 @@ if 'State' in data_copy.columns:
   data_copy = data_copy.drop('State', axis=1)
 
 # %%
-data_copy.to_csv('processed_data.csv', index=False)
+data_copy.to_csv('../data/Fase1-output_processed_data.csv', index=False)
 
 # %%
