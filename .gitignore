@@ -1,8 +1,8 @@
-# Ignorar todos os arquivos dentro da pasta 'data/'
-data/*
+# Ignorar todos os arquivos csv dentro da pasta 'data/'
+data/*.csv
 
 # Ignorar arquivos com as extensões específicas
-*.csv
+# *.csv
 *.pkl
 *.h5
 *.db
