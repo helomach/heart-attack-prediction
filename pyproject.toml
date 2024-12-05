@@ -3,6 +3,7 @@ fase1 = "python Fase1.py"
 fase2 = "python Fase2.py"
 fase3 = "python Fase3.py"
 fase4 = "python Fase4.py"
+fase4-pycaret = "python Fase4-Pycaret.py"
 
 fase1_dep = "task fase1"
 pre_fase2_dep = "task fase1_dep"
@@ -19,24 +20,21 @@ jupyter-list = "jupyter notebook list"
 name = "heart-attack-prediction"
 version = "0.1.0"
 description = ""
-authors = ["Heloisa Machado"]
+authors = ["Darlon Vasata"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
-matplotlib = "^3.9.2"
-scikit-learn = "^1.5.2"
+python = "3.9.12"
+pycaret = "3.3.2"
+kaleido = "0.2.1"
 seaborn = "^0.13.2"
-pandas = "^2.2.3"
-numpy = "^2.1.3"
 
 
 [tool.poetry.group.dev.dependencies]
-pandas = "^2.2.3"
 notebook = "^7.2.2"
 notebook-shim = "^0.2.4"
-jupytext = "^1.16.4"
-imbalanced-learn = "^0.12.4"
+# jupytext = "^1.16.4"
+# imbalanced-learn = "^0.12.4"
 
 [build-system]
 requires = ["poetry-core"]
